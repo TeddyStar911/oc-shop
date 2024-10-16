@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node dist/oc-client/server/server.mjs",
+    "start": "node dist/oc-shop/server/server.mjs",
     "serve": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
