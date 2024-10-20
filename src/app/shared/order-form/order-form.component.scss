@@ -1,0 +1,38 @@
+.order-form {
+  background-color: #1c385f;
+  height: 400px;
+  padding: 20px;
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .order-form-field {
+    width: 100%;
+
+    select {
+      height: 60px;
+      width: 100%;
+      padding: 0 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    input {
+      height: 60px;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 10px;
+      font-size: 20px;
+    }
+  }
+
+  button {
+    height: 60px;
+    background-color: #ffb73b;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
