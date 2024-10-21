@@ -1,4 +1,4 @@
-<form class="order-form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+<form class="order-form" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
   <div class="order-form-field">
     <select id="count" formControlName="count">
       <option value="">Обрати Кількість (шт)</option>
@@ -7,12 +7,13 @@
   </div>
 
   <div class="order-form-field">
-    <input id="name" formControlName="name">
+    <input id="name" formControlName="name" placeholder="Введіть Ваше ім'я">
   </div>
 
   <div class="order-form-field">
-    <input id="phone" formControlName="phone">
+    <input id="phone" formControlName="phone" mask="(000) 000-0000" placeholder="Введіть Ваш телефон">
   </div>
 
-  <button type="submit" [disabled]="myForm.invalid">Придбати Зараз</button>
+  <button type="submit" [disabled]="orderForm.invalid">Придбати Зараз</button>
+  <div class="validation-message" *ngIf="orderForm.invalid && orderForm.dirty">Заповінть правильно поля</div>
 </form>

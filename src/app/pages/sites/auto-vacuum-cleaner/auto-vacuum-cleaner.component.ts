@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NgOptimizedImage} from "@angular/common";
+import {NgOptimizedImage, NgTemplateOutlet} from "@angular/common";
 import {FooterComponent} from "../../../shared/footer/footer.component";
 import {OrderFormComponent} from "../../../shared/order-form/order-form.component";
 import {DeliveryBannerComponent} from "../../../shared/delivery-banner/delivery-banner.component";
@@ -11,7 +11,8 @@ import {DeliveryBannerComponent} from "../../../shared/delivery-banner/delivery-
     NgOptimizedImage,
     FooterComponent,
     OrderFormComponent,
-    DeliveryBannerComponent
+    DeliveryBannerComponent,
+    NgTemplateOutlet
   ],
   templateUrl: './auto-vacuum-cleaner.component.html',
   styleUrl: './auto-vacuum-cleaner.component.scss'

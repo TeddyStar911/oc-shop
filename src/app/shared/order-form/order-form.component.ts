@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";
 import {TelegramService} from "../../services/telegram/telegram.service";
+import {NgxMaskDirective} from "ngx-mask";
 
 @Component({
   selector: 'app-order-form',
@@ -9,13 +10,14 @@ import {TelegramService} from "../../services/telegram/telegram.service";
   imports: [
     ReactiveFormsModule,
     NgIf,
-    NgForOf
+    NgForOf,
+    NgxMaskDirective
   ],
   templateUrl: './order-form.component.html',
   styleUrl: './order-form.component.scss'
 })
 export class OrderFormComponent implements OnInit {
-  myForm!: FormGroup;
+  orderForm!: FormGroup;
   countOptions: string[] = [
     '1 шт = 499 грн ( Без знижки )',
     '2 шт = 948 грн ( знижка 5% )',
@@ -26,7 +28,7 @@ export class OrderFormComponent implements OnInit {
   constructor(private fb: FormBuilder, private telegramService: TelegramService) { }
 
   ngOnInit() {
-    this.myForm = this.fb.group({
+    this.orderForm = this.fb.group({
       count: ['', Validators.required],
       name: ['', Validators.required],
       phone: ['', [Validators.required, Validators.pattern('^[0-9]+$')]]
@@ -34,8 +36,8 @@ export class OrderFormComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.myForm.valid) {
-      const {count, name, phone} = this.myForm.value;
+    if (this.orderForm.valid) {
+      const {count, name, phone} = this.orderForm.value;
       const messageString = `Сайт: Vacuum Cleaner, кількість - ${count}, Ім'я - ${name}, Телефон - ${phone}`;
       this.telegramService.sendMessage(messageString).subscribe(response => {
         console.log(response, 'response');

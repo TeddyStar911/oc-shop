@@ -1,5 +1,9 @@
 .page-container {
-  padding: 30px;
+  padding: 30px 100px;
+
+  @media (max-width: 600px) {
+    padding: 30px;
+  }
 
   h1 {
     font-size: 44px;

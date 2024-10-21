@@ -1,4 +1,180 @@
 <div class="main">
+  <ng-container *ngTemplateOutlet="topCardTemplate"></ng-container>
+
+  <div class="order-button">
+    <a href="#order_form" class="big-button">ЗРОБИТИ ЗАМОВЛЕННЯ</a>
+  </div>
+  <div class="number-discount">
+    <h3 class="block-title">ЗАОЩАДЖУЙ ПРЯМО ЗАРАЗ!</h3>
+    <ol role="list" class="discount-list">
+      <li>2 шт = <strong>948</strong> грн ( знижка 5% )</li>
+      <li>3 шт = <strong>1347</strong> грн ( знижка 10% )</li>
+      <li>4 шт = <strong>1696</strong> грн ( знижка 15% )</li>
+    </ol>
+  </div>
+
+  <div class="product-description">
+    <h2 class="title">ВИ ЗАБУДЕТЕ, ЩО ТАКЕ БЕЗЛАД В САЛОНІ АВТОМОБІЛЯ!</h2>
+    <div class="presentation-wrap">
+      <div class="presentation">
+        <div class="product-description">
+          <div class="presentation-wrap">
+            <div class="presentation">
+              <p>Автомобільний пилосос – це компактний і простий у використанні пристрій, який дозволить завжди тримати салон вашого автомобіля в чистоті.</p>
+              <p>Легкий і портативний: бездротовий ручний автомобільний пилосос має компактні розміри. Завдяки своїй високій потужності він легко впорається з такими забрудненнями як: шерсть домашніх тварин, пил, дрібне сміття і різні залишки від їжі. А невеликі розміри дозволяють його легко переносити і зберігати в салоні будь-якого автомобіля. Пилосос має діод підсвічування, що дає можливість прибирати навіть у темряві.</p>
+              <p>Тривалий термін служби: всередині пилососа встановлено вбудований літієвої акумулятор ємністю 2000мАч, який має довгий термін служби і може пройти близько 500 циклів заряду акумулятора. Зарядка здійснюється через кабель типу TYPE-C, а повний заряд батареї здатний забезпечити до 30 хвилин автономної роботи.</p>
+            </div>
+          </div>
+        </div>
+        <div class="features-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features-block">
+    <h1 class="title">ПЕРЕВАГИ</h1>
+    <div class="feature-item-wrap">
+      <div class="feature-item">
+        <div class="feature-image"><img width="800" height="800" src="https://dlombi.org.ua/wp-content/uploads/2023/01/1.jpeg" class="attachment-full size-full" alt="" decoding="async"></div>
+        <div class="feature-text">
+          <h4 class="feature-title">БАГАТОРАЗОВИЙ ФІЛЬТР</h4>
+          <div class="feature-description"><p>Фільтр у вакуумі можна від'єднувати, мити і повторно використовувати кілька разів, що зручно</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-image"><img width="195" height="182" src="https://dlombi.org.ua/wp-content/uploads/2023/01/2-2.jpeg" class="attachment-full size-full" alt="" decoding="async"></div>
+        <div class="feature-text">
+          <h4 class="feature-title">ЗНИЖЕННЯ РІВНЯ ШУМУ</h4>
+          <div class="feature-description"><p>Вакуум розроблено з функцією шумозаглушення, щоб зменшити звук, який він може виробляти</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-image"><img width="1020" height="1020" src="https://dlombi.org.ua/wp-content/uploads/2023/01/3-2.jpeg" class="attachment-full size-full" alt="" decoding="async"></div>
+        <div class="feature-text">
+          <h4 class="feature-title">ШИРОКИЙ СПЕКТР ВИКОРИСТАННЯ</h4>
+          <div class="feature-description"><p>Пилосос оснащений не тільки функцією всмоктування, а й функцією обдування завдяки потужному вбудованому вентилятору</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="specifications">
+    <h2 class="title">Характеристики</h2>
+    <div class="image">
+      <img width="790" height="957" src="https://dlombi.org.ua/wp-content/uploads/2023/01/ha.jpeg" class="attachment-full size-full" alt="" decoding="async">        </div>
+    <ul role="list" class="characteristics__list">
+      <li>
+        <b>Матеріал:</b>
+        <span>АБС-пластик</span>
+      </li>
+      <li>
+        <b>Ємність акумулятора:</b>
+        <span>4000 мАг</span>
+      </li>
+      <li>
+        <b>Тримає заряд:</b>
+        <span>до 30 хвилин</span>
+      </li>
+      <li>
+        <b>Потужність:</b>
+        <span>120 Вт</span>
+      </li>
+      <li>
+        <b>Колір:</b>
+        <span>чорний і білий</span>
+      </li>
+      <li>
+        <b>Час заряджання:</b>
+        <span>3-4 години</span>
+      </li>
+      <li>
+        <b>Вага:</b>
+        <span>400 г</span>
+      </li>
+      <li>
+        <b>Кiлькiсть насадок:</b>
+        <span>2</span>
+      </li>
+      <li>
+        <b>Вакуум:</b>
+        <span>5500 РА</span>
+      </li>
+      <li>
+        <b>Тип збирання:</b>
+        <span>Сухе та вологе</span>
+      </li>
+    </ul>
+    <div class="order-button margin30">
+      <a href="#order_form" class="big-button">ЗАМОВИТИ ЗІ ЗНИЖКОЮ</a>
+    </div>
+  </div>
+
+  <div class="how-to-get">
+    <h2 class="title">Як зробити замовлення?</h2>
+    <div class="order_steps1">
+      <div class="step_item">
+        <div class="image">
+          <div class="bg_icon">
+            <img src="https://dlombi.org.ua/wp-content/themes/tovarka/img/choices.png" width="32" alt="">
+          </div>
+          <img src="https://dlombi.org.ua/wp-content/themes/tovarka/img/order_steps1__step1_image.png" class="decor" alt="">
+        </div>
+        <div class="text">
+          <h4>Заявка</h4>
+          <p>Заповніть контактну форму на сайті</p>
+        </div>
+      </div>
+      <div class="step_item">
+        <div class="image">
+          <div class="bg_icon">
+            <img src="https://dlombi.org.ua/wp-content/themes/tovarka/img/customer-service.png" width="32" alt="">
+          </div>
+          <img src="https://dlombi.org.ua/wp-content/themes/tovarka/img/order_steps1__step2_image.png" class="decor" alt="">
+        </div>
+        <div class="text">
+          <h4>Дзвінок</h4>
+          <p>Наш менеджер передзвонить для уточнення деталей</p>
+        </div>
+      </div>
+      <div class="step_item">
+        <div class="image">
+          <div class="bg_icon">
+            <img src="https://dlombi.org.ua/wp-content/themes/tovarka/img/shipped.png" width="32" alt="">
+          </div>
+          <img src="https://dlombi.org.ua/wp-content/themes/tovarka/img/order_steps1__step3_image.png" class="decor" alt="">
+        </div>
+        <div class="text">
+          <h4>Відправлення</h4>
+          <p>Доставляємо ваш товар протягом 1-2 днів</p>
+        </div>
+      </div>
+      <div class="step_item">
+        <div class="image">
+          <div class="bg_icon">
+            <img src="https://dlombi.org.ua/wp-content/themes/tovarka/img/card-machine.png" width="32" alt="">
+          </div>
+          <img src="https://dlombi.org.ua/wp-content/themes/tovarka/img/order_steps1__step4_image.png" class="decor" alt="">
+        </div>
+        <div class="text">
+          <h4>Отримання</h4>
+          <p>Оплачуєте при отриманні на пошті</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-container *ngTemplateOutlet="topCardTemplate"></ng-container>
+
+
+  <app-order-form></app-order-form>
+  <app-delivery-banner></app-delivery-banner>
+  <app-footer></app-footer>
+</div>
+
+<ng-template #topCardTemplate>
   <div class="top-card">
     <div class="header">
       <div class="sub-title">CAR VACUUM CLEANER</div>
@@ -20,34 +196,5 @@
         <small>грн</small>
       </div>
     </div>
-    <div class="order-button">
-      <a href="#order_form" class="big-button">ЗРОБИТИ ЗАМОВЛЕННЯ</a>
-    </div>
-    <div class="number-discount">
-      <h3 class="block-title">ЗАОЩАДЖУЙ ПРЯМО ЗАРАЗ!</h3>
-      <ol role="list" class="discount-list">
-        <li>2 шт = <strong>948</strong> грн ( знижка 5% )</li><li>3 шт = <strong>1347</strong> грн ( знижка 10% )</li><li>4 шт = <strong>1696</strong> грн ( знижка 15% )</li>    </ol>
-    </div>
   </div>
-
-  <div class="product-description">
-    <h2 class="title">ВИ ЗАБУДЕТЕ, ЩО ТАКЕ БЕЗЛАД В САЛОНІ АВТОМОБІЛЯ!</h2>
-    <div class="presentation-wrap">
-      <div class="presentation">
-        <div class="product-description">
-          <div class="presentation-wrap">
-            <div class="presentation">
-              <p>Автомобільний пилосос – це компактний і простий у використанні пристрій, який дозволить завжди тримати салон вашого автомобіля в чистоті.</p>
-              <p>Легкий і портативний: бездротовий ручний автомобільний пилосос має компактні розміри. Завдяки своїй високій потужності він легко впорається з такими забрудненнями як: шерсть домашніх тварин, пил, дрібне сміття і різні залишки від їжі. А невеликі розміри дозволяють його легко переносити і зберігати в салоні будь-якого автомобіля. Пилосос має діод підсвічування, що дає можливість прибирати навіть у темряві.</p>
-              <p>Тривалий термін служби: всередині пилососа встановлено вбудований літієвої акумулятор ємністю 2000мАч, який має довгий термін служби і може пройти близько 500 циклів заряду акумулятора. Зарядка здійснюється через кабель типу TYPE-C, а повний заряд батареї здатний забезпечити до 30 хвилин автономної роботи.</p>
-            </div>
-          </div>
-        </div>
-        <div class="features-block"></div>
-      </div>
-    </div>
-  </div>
-  <app-order-form></app-order-form>
-  <app-delivery-banner></app-delivery-banner>
-  <app-footer></app-footer>
-</div>
+</ng-template>
