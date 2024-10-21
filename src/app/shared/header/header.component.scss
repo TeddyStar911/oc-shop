@@ -1,0 +1,18 @@
+header {
+  background-color: #1c385f;
+  height: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

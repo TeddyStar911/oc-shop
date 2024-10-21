@@ -5,9 +5,15 @@ body {
 }
 
 p, h1, h2, h3, h4, h5, h6  {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ol[role='list'] {
   list-style: none;
+}
+
+img, picture, video, object {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
