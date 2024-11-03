@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import {HomeComponent} from "./pages/system/home/home.component";
-import {AutoVacuumCleanerComponent} from "./pages/sites/auto-vacuum-cleaner/auto-vacuum-cleaner.component";
+import {AutoVacuumCleanerComponent} from "./pages/products/auto-vacuum-cleaner/auto-vacuum-cleaner.component";
 import {PageNotFoundComponent} from "./pages/system/page-not-found/page-not-found.component";
 import {PrivacyPolicyComponent} from "./pages/system/support/privacy-policy/privacy-policy.component";
 import {CookiePolicyComponent} from "./pages/system/support/cookie-policy/cookie-policy.component";

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";
-import {TelegramService} from "../../services/telegram/telegram.service";
+import {TelegramService} from "../../../core/services/telegram/telegram.service";
 import {NgxMaskDirective} from "ngx-mask";
 
 @Component({
@@ -40,6 +40,8 @@ export class OrderFormComponent implements OnInit {
       const {count, name, phone} = this.orderForm.value;
       const messageString = `Сайт: Vacuum Cleaner, кількість - ${count}, Ім'я - ${name}, Телефон - ${phone}`;
       this.telegramService.sendMessage(messageString).subscribe(response => {
+        this.orderForm.reset();
+        this.orderForm.get('count')?.patchValue('');
         console.log(response, 'response');
       });
     }

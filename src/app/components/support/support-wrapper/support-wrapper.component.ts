@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
-import {HeaderComponent} from "../header/header.component";
-import {FooterComponent} from "../footer/footer.component";
+import {HeaderComponent} from "../../common/header/header.component";
+import {FooterComponent} from "../../common/footer/footer.component";
 
 @Component({
   selector: 'app-support-wrapper',

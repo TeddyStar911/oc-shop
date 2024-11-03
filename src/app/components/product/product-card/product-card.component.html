@@ -1,0 +1,20 @@
+<div class="product-card">
+  <div class="product-image">
+    <div class="discount">{{productConfig.salePercent}}% знижка</div>
+    <img width="1020" height="1020" src="{{productConfig.imgUrl}}"
+         class="attachment-full size-full" alt="" decoding="async" fetchpriority="high">
+  </div>
+  <div class="product-prices">
+      <div class="old-price">
+        <span>Звичайна ціна</span>
+        <strong>{{productConfig.price}}</strong>
+        <small>грн</small>
+      </div>
+
+      <div class="new-price">
+        <span>Акційна ціна</span>
+        <strong>{{productConfig.salePrice}}</strong>
+        <small>грн</small>
+      </div>
+    </div>
+</div>

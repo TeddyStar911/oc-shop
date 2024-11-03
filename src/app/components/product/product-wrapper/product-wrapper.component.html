@@ -1,0 +1,22 @@
+<div class="product-container">
+  <div class="product-header">
+    <app-product-header
+      [subTitle]="productConfig.subTitle"
+      [title]="productConfig.title"
+    ></app-product-header>
+    <app-product-card
+      [productConfig]="productConfig"
+    ></app-product-card>
+    <app-product-make-order-button [productOrderBtnConfig]="productOrderBtnConfig"></app-product-make-order-button>
+  </div>
+  <div class="product-body">
+    <ng-content></ng-content>
+  </div>
+
+  <div class="product-footer">
+    <app-order-form></app-order-form>
+    <app-delivery-banner></app-delivery-banner>
+    <app-footer></app-footer>
+  </div>
+
+</div>

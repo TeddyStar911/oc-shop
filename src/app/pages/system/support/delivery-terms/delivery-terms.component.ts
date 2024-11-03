@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {HeaderComponent} from "../../../../shared/header/header.component";
-import {FooterComponent} from "../../../../shared/footer/footer.component";
-import {SupportWrapperComponent} from "../../../../shared/support-wrapper/support-wrapper.component";
+import {HeaderComponent} from "../../../../components/common/header/header.component";
+import {FooterComponent} from "../../../../components/common/footer/footer.component";
+import {SupportWrapperComponent} from "../../../../components/support/support-wrapper/support-wrapper.component";
 
 @Component({
   selector: 'app-delivery-terms',

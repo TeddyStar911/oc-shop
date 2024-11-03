@@ -1,12 +1,12 @@
 .order-form {
   background-color: #1c385f;
   height: 400px;
-  padding: 20px;
-  width: 440px;
+  padding: 50px 20px 20px 20px;
+  width: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 50px;
+  margin: 0 auto;
 
   .order-form-field {
     width: 100%;
