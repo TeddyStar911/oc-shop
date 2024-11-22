@@ -13,10 +13,11 @@ import {NgStyle} from "@angular/common";
 })
 export class ProductMakeOrderButtonComponent {
   @Input() productOrderBtnConfig: ProductOrderBtnConfig;
-  get orderFormUrl(): string {
-    if (typeof window !== "undefined") {
-      return `${window.location.origin}${window.location.pathname}#order_form`;
+
+  scrollToForm() {
+    const orderFormElement = document.getElementById('order_form');
+    if (orderFormElement) {
+      orderFormElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-    return ''
   }
 }
