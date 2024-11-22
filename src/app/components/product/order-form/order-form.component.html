@@ -16,4 +16,5 @@
 
   <button type="submit" [disabled]="orderForm.invalid">Придбати Зараз</button>
   <div class="validation-message" *ngIf="orderForm.invalid && orderForm.dirty">Заповінть правильно поля</div>
+  <div class="success-message" *ngIf="showSuccessMessage">Дякуємо, незабаром адміністратор зв'яжеться з вами.</div>
 </form>

@@ -24,6 +24,7 @@ export class OrderFormComponent implements OnInit {
     '3 шт = 1347 грн ( знижка 10% )',
     '4 шт = 1696 грн ( знижка 15% )',
   ];
+  showSuccessMessage: boolean = false;
 
   constructor(private fb: FormBuilder, private telegramService: TelegramService) { }
 
@@ -40,9 +41,9 @@ export class OrderFormComponent implements OnInit {
       const {count, name, phone} = this.orderForm.value;
       const messageString = `Сайт: Vacuum Cleaner, кількість - ${count}, Ім'я - ${name}, Телефон - ${phone}`;
       this.telegramService.sendMessage(messageString).subscribe(response => {
+        this.showSuccessMessage = true;
         this.orderForm.reset();
         this.orderForm.get('count')?.patchValue('');
-        console.log(response, 'response');
       });
     }
   }
