@@ -26,11 +26,18 @@ import {ProductOrderBtnConfig} from "../../../core/interfaces/product-order-btn-
 export class AutoVacuumCleanerComponent {
   productConfig: ProductConfig = {
     title: 'АВТОМОБІЛЬНИЙ ПИЛОСОС',
+    sku: 'Автомобільний пилосос',
     subTitle: 'CAR VACUUM CLEANER',
     salePercent: 28,
     imgUrl: 'https://dlombi.org.ua/wp-content/uploads/2023/01/000.jpeg',
     price: 699,
-    salePrice: 499
+    salePrice: 499,
+    countOptions: [
+      '1 шт = 499 грн ( Без знижки )',
+      '2 шт = 948 грн ( знижка 5% )',
+      '3 шт = 1347 грн ( знижка 10% )',
+      '4 шт = 1696 грн ( знижка 15% )',
+    ]
   };
 
   productOrderBtnConfig: ProductOrderBtnConfig = {

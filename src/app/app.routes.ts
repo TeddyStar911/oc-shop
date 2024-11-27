@@ -6,10 +6,14 @@ import {PrivacyPolicyComponent} from "./pages/system/support/privacy-policy/priv
 import {CookiePolicyComponent} from "./pages/system/support/cookie-policy/cookie-policy.component";
 import {PublicOfferComponent} from "./pages/system/support/public-offer/public-offer.component";
 import {DeliveryTermsComponent} from "./pages/system/support/delivery-terms/delivery-terms.component";
+import {
+  RechargeableFlashlightComponent
+} from "./pages/products/rechargeable-flashlight/rechargeable-flashlight.component";
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'auto-vacuum-cleaner', component: AutoVacuumCleanerComponent },
+  { path: 'rechargeable-flashlight', component: RechargeableFlashlightComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'cookie-policy', component: CookiePolicyComponent },
   { path: 'public-offer', component: PublicOfferComponent },

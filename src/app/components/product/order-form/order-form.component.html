@@ -2,7 +2,7 @@
   <div class="order-form-field">
     <select id="count" formControlName="count">
       <option value="">Обрати Кількість (шт)</option>
-      <option *ngFor="let option of countOptions" [value]="option">{{ option }}</option>
+      <option *ngFor="let option of productConfig.countOptions" [value]="option">{{ option }}</option>
     </select>
   </div>
 

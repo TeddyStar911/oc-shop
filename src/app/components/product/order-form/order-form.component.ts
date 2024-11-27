@@ -1,8 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";
 import {TelegramService} from "../../../core/services/telegram/telegram.service";
 import {NgxMaskDirective} from "ngx-mask";
+import {ProductConfig} from "../../../core/interfaces/product-config.interface";
 
 @Component({
   selector: 'app-order-form',
@@ -17,13 +18,8 @@ import {NgxMaskDirective} from "ngx-mask";
   styleUrl: './order-form.component.scss'
 })
 export class OrderFormComponent implements OnInit {
+  @Input() productConfig: ProductConfig;
   orderForm!: FormGroup;
-  countOptions: string[] = [
-    '1 шт = 499 грн ( Без знижки )',
-    '2 шт = 948 грн ( знижка 5% )',
-    '3 шт = 1347 грн ( знижка 10% )',
-    '4 шт = 1696 грн ( знижка 15% )',
-  ];
   showSuccessMessage: boolean = false;
 
   constructor(private fb: FormBuilder, private telegramService: TelegramService) { }
@@ -39,12 +35,16 @@ export class OrderFormComponent implements OnInit {
   onSubmit() {
     if (this.orderForm.valid) {
       const {count, name, phone} = this.orderForm.value;
-      const messageString = `Сайт: Vacuum Cleaner, кількість - ${count}, Ім'я - ${name}, Телефон - ${phone}`;
-      this.telegramService.sendMessage(messageString).subscribe(response => {
-        this.showSuccessMessage = true;
-        this.orderForm.reset();
-        this.orderForm.get('count')?.patchValue('');
+      const messageString = `${this.productConfig.sku}, кількість - ${count}, Ім'я - ${name}, Телефон - ${phone}`;
+      this.telegramService.sendMessage(messageString).subscribe(() => {
+        this.resetFormAction();
       });
     }
+  }
+
+  resetFormAction(): void {
+    this.showSuccessMessage = true;
+    this.orderForm.reset();
+    this.orderForm.get('count')?.patchValue('');
   }
 }
