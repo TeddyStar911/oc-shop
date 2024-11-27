@@ -1,8 +1,7 @@
-User-agent: *
-Disallow: /privacy-policy
-Disallow: /cookie-policy
-Disallow: /public-offer
-Disallow: /delivery-terms
-Disallow: /page-not-found
+User-agent: Googlebot
+Disallow: /nogooglebot/
 
-Sitemap: https://www.micromarket.com.ua/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://micromarket.com.ua/sitemap.xml

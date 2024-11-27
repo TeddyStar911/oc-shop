@@ -1,45 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.micromarket.com.ua/</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <loc>https://micromarket.com.ua/</loc>
+    <lastmod>2024-11-27T15:15:27+00:00</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.micromarket.com.ua/auto-vacuum-cleaner</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://micromarket.com.ua/auto-vacuum-cleaner/</loc>
+    <lastmod>2024-11-27T15:15:27+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.micromarket.com.ua/privacy-policy</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://micromarket.com.ua/rechargeable-flashlight/</loc>
+    <lastmod>2024-11-27T15:15:27+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.micromarket.com.ua/cookie-policy</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://micromarket.com.ua/privacy-policy/</loc>
+    <lastmod>2024-11-27T15:15:27+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.micromarket.com.ua/public-offer</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://micromarket.com.ua/cookie-policy/</loc>
+    <lastmod>2024-11-27T15:15:27+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.micromarket.com.ua/delivery-terms</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://micromarket.com.ua/public-offer/</loc>
+    <lastmod>2024-11-27T15:15:27+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.micromarket.com.ua/page-not-found</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.1</priority>
+    <loc>https://micromarket.com.ua/delivery-terms/</loc>
+    <lastmod>2024-11-27T15:15:27+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
+
+
 </urlset>
